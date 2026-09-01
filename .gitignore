@@ -1,0 +1,16 @@
+# Secrets
+.env
+.env.*
+*.secret
+*.token
+
+# Credentials
+.git-credentials
+
+# Editor / temporary files
+*.swp
+*.swo
+*~
+
+# OS / runtime files
+.DS_Store
