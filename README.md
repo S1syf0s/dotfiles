@@ -1,7 +1,8 @@
-Arch Linux configuration files
+-- Arch Linux configuration files --
 
 -- Emacs
 -- Nvim
 -- i3
 -- Zathura
--- Alacritty --
+-- Alacritty 
+--
