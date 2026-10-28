@@ -4,5 +4,4 @@
 -- Nvim
 -- i3
 -- Zathura
--- Alacritty 
---
+-- Alacritty --
