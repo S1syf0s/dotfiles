@@ -34,15 +34,25 @@ return {
         end,
       })
 
-      vim.keymap.set("n", "<leader>a", function()
+    vim.keymap.set("n", "<leader>a", function()
         list:add()
       end)
 
-      vim.keymap.set("n", "<leader>hd", function()
-        list:remove()
-      end)
+    vim.keymap.set("n", "<leader>hd", function()
+      local item = list.config.create_list_item(list.config)
 
-      vim.keymap.set("n", "<leader>hda", function()
+      for i = 1, list:length() do
+        if list.config.equals(list.items[i], item) then
+          table.remove(list.items, i)
+          list._length = list._length - 1
+          break
+        end
+      end
+
+      vim.cmd("redrawstatus!")
+    end, { desc = "Harpoon: poista nykyinen tiedosto" })
+      
+    vim.keymap.set("n", "<leader>hda", function()
         list:clear()
       end)
 

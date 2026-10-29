@@ -1,0 +1,97 @@
+configuration {
+    modi: "drun";
+    show-icons: true;
+    drun-display-format: "{name}";
+    display-drun: "Apps: ";
+    font: "Roboto Mono 16";
+}
+
+@theme "/dev/null"
+
+* {
+    bg: #1e1e2e;
+    bg-alt: #313244;
+    fg: #cdd6f4;
+    fg-muted: #a6adc8;
+    accent: #89b4fa;
+    border: #45475a;
+}
+
+window {
+    width: 600px;
+    border: 2px;
+    border-color: @border;
+    border-radius: 0px;
+    background-color: @bg;
+    padding: 20px;
+}
+
+mainbox {
+    background-color: @bg;
+    children: [ inputbar, listview ];
+    spacing: 15px;
+}
+
+inputbar {
+    background-color: @bg-alt;
+    border-radius: 0px;
+    padding: 12px;
+    children: [ prompt, entry ];
+}
+
+prompt {
+    background-color: transparent;
+    text-color: @accent;
+    padding: 0px 8px 0px 0px;
+}
+
+entry {
+    background-color: transparent;
+    text-color: @fg;
+    placeholder: "Search applications...";
+    placeholder-color: @fg-muted;
+}
+
+listview {
+    background-color: @bg;
+    lines: 8;
+    columns: 1;
+    fixed-height: true;
+    scrollbar: false;
+    spacing: 0px;
+    padding: 0px;
+}
+
+element {
+    background-color: @bg;
+    padding: 10px;
+    border: 0px;
+    border-radius: 0px;
+    spacing: 10px;
+}
+
+element normal {
+    background-color: @bg-alt;
+    text-color: @fg;
+}
+
+element alternate {
+    background-color: @bg-alt;
+    text-color: @fg;
+}
+
+element selected {
+    background-color: @bg-alt;
+    text-color: @accent;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: @fg;
+    vertical-align: 0.5;
+}
+
+element-icon {
+    background-color: transparent;
+    size: 32px;
+}

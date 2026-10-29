@@ -1,3 +1,7 @@
+return {}
+
+--[[
+
 return {
   "nvim-treesitter/nvim-treesitter",
   lazy = false,
@@ -19,6 +23,9 @@ return {
         "css",
         "markdown",
       },
+      highlight = {
+        enable = false,
+      },
     })
 
     vim.api.nvim_create_autocmd("FileType", {
@@ -28,7 +35,11 @@ return {
           return
         end
         pcall(vim.treesitter.start)
+    
+        pcall(vim.treesitter.stop)
       end,
     })
   end,
 }
+
+]]

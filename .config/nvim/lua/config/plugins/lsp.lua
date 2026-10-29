@@ -1,4 +1,8 @@
+return {}
+
 -- lua/config/plugins/lsp.lua
+--[[
+
 return {
   -- Mason: LSP serverien asentaja
   {
@@ -78,3 +82,4 @@ return {
     end,
   },
 }
+]]
