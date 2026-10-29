@@ -1,0 +1,36 @@
+[window]
+opacity = 1.0
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+style = { shape = "Block", blinking = "Off" }
+
+[colors.primary]
+background = "#181818"
+foreground = "#e4e4e4"
+
+[colors.cursor]
+cursor = "#ffdd33"
+text = "CellBackground"
+
+[colors.normal]
+black =   "#282828"
+red =     "#f43841"
+green =   "#73c936"
+yellow =  "#ffdd33"
+blue =    "#96a6c8"
+magenta = "#9e95c7"
+cyan =    "#95a99f"
+white =   "#e4e4e4"
+
+[colors.bright]
+black =   "#52494e"
+red =     "#ff3851"
+green =   "#42dc00"
+yellow =  "#ffdb00"
+blue =    "#92a7cb"
+magenta = "#a095cb"
+cyan =    "#90aa9e"
+white =   "#f4f4f4"
